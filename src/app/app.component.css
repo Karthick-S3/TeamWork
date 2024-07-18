@@ -1,0 +1,33 @@
+.touchBtn button{
+    background:#151A24;
+    color: white;
+    outline: none;
+    border: none;
+}
+.touchBtn button:hover{
+    background:#323c4d;
+}
+.menus a{
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    transition: 0.5s ease ;
+    font-weight: 500;
+}
+.menus a:nth-child(1):active{
+    color: #7010f5;
+}
+
+.menus a:hover{
+    
+    color: #7010f5;
+}
+.navbar{
+    padding: 20px 10px;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+
+    
+}
