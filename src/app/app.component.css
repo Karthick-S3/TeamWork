@@ -1,33 +1,45 @@
-.touchBtn button{
-    background:#151A24;
-    color: white;
+.touchBtn button {
+    background: white;
+    /* color: rgb(0, 0, 0); */
     outline: none;
     border: none;
-}
-.touchBtn button:hover{
-    background:#323c4d;
-}
-.menus a{
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.151) 0px 1px 3px 0px, rgba(27, 31, 35, 0.295) 0px 0px 0px 1px;
+  }
+  
+  .touchBtn button:hover{
+    box-shadow: rgba(0, 0, 0, 0.151) 0px 1px 3px 0px, rgba(27, 31, 35, 0.295) 0px 0px 0px 1px;
+  }
+  
+  .menus a {
     text-decoration: none;
+    color: rgb(75, 75, 75);
+    /* transition: 0.5s ease; */
     font-weight: 400;
-    color: black;
-    transition: 0.5s ease ;
+    font-size: 15px;
+  }
+  .menus a:hover{
+    /* text-decoration: underline; */
+    /* transform: scale(1.1); */
     font-weight: 500;
-}
-.menus a:nth-child(1):active{
-    color: #7010f5;
-}
-
-.menus a:hover{
-    
-    color: #7010f5;
-}
-.navbar{
-    padding: 20px 10px;
-    /* background-color: rgba(255, 255, 255, 0.6); */
-    backdrop-filter: blur(20px);
+  }
+  
+  .navbar-brand {
+    color: black;
+  }
+  
+ 
+  .navbar.scrolled .menus a {
+    color: white;
+  }
+  .navbar{
+    padding: 30px 10px;
+    transition: 0.5s ease;
+  }
+  
+  .navbar.scrolled {
+    padding: 10px 10px;
+    background-color: #7010f5 !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    
-
-    
-}
+  }
+  
