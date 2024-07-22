@@ -25,9 +25,12 @@
   }
   
   .navbar-brand {
-    color: black;
+    color: rgb(0, 0, 0);
   }
   
+  .scrolledlogo{
+    color: white;
+  }
  
   .navbar.scrolled .menus a {
     color: white;
