@@ -42,4 +42,10 @@
     background-color: #7010f5 !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
+  @media only screen and (max-width: 800px) {
+    .menus a{
+        display: none;
+    }
+   
+  }

@@ -223,6 +223,16 @@
 
 
 
-
+@media only screen and (max-width: 800px) {
+  /* .toolcard{
+    padding: 0%;
+    flex-direction: column;
+    
+  }
+  .toolcard h1{
+    width: 100%;
+  } */
+ 
+}
 
 
