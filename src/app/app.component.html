@@ -3,12 +3,12 @@
     
     <div class="d-flex align-items-center justify-content-center">
       <a class="navbar-brand fw-bold" [ngClass]="{'scrolledlogo': Scrolledlogo}">Logo.</a>
-      <div class="menus  d-flex align-items-center justify-content-between ms-4" style="width: 500px;">
-        <a href="Home">Home</a>
-        <a href="Services">Services</a>
-        <a href="#">Projects</a>
-        <a href="About">About US</a>
-        <a href="Contacts">Contacts</a>
+      <div class="menus  d-flex align-items-center justify-content-between ms-4" style="width: 450px;">
+        <a routerLink="Home">Home</a>
+        <a routerLink="Services">Services</a>
+        <a routerLink="#">Projects</a>
+        <a routerLink="About">About</a>
+        <a routerLink="Contacts">Contact</a>
       </div>
     </div>
     <div class="touchBtn">
@@ -19,6 +19,7 @@
   </div>
 
 </nav>
+<ngx-ui-loader fgsType="square-jelly-box" fgsColor="#8637F4" bgsColor="blue" pbColor="#7010f5"></ngx-ui-loader>
 
 <router-outlet></router-outlet>
 

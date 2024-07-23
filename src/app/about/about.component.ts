@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject, PLATFORM_ID, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-about',
@@ -32,19 +33,22 @@ export class AboutComponent implements OnInit,AfterViewInit {
  
   activeSlide = 'slide1';
  
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private ngxService: NgxUiLoaderService) {}
  
   ngOnInit(): void {
+    this.ngxService.start();
     if (isPlatformBrowser(this.platformId)) {
       this.incrementClientsCounter();
       this.incrementLocationsCounter();
     }
+
   }
  
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       this.initializeIntersectionObserver();
     }
+    this.ngxService.stop();
   }
  
   incrementClientsCounter(): void {
