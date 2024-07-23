@@ -10,10 +10,10 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
 export class AppComponent implements OnInit {
   constructor(private ngxService : NgxUiLoaderService ) {}
   ngOnInit(): void {
-    this.ngxService.start();
-    setTimeout(() => {
-    this.ngxService.stop();
-    }, 1000);
+    // this.ngxService.start();
+    // setTimeout(() => {
+    // this.ngxService.stop();
+    // }, 1000);
   }
 
   

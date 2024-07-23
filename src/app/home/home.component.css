@@ -50,6 +50,77 @@
   flex: 0 0 auto; /* Ensure cards don't shrink or grow */
 }
 
+.card:nth-child(1){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card:nth-child(2){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card:nth-child(3){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card:nth-child(4){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/5.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card:nth-child(5){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card:nth-child(6){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card:nth-child(7){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card:nth-child(8){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/5.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card:nth-child(9){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card:nth-child(10){
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
 
 
 .services h3{
