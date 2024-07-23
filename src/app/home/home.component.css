@@ -21,13 +21,33 @@
     background:#465368;
 }
 
-.card{
-    margin: 0px 10px;
-    height: 340px;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 250px;
-    background-color: black;
+.cards {
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.cards-wrapper {
+  display: flex;
+  animation: slide 30s linear infinite;
+}
+
+.card {
+  margin: 0px 70px;
+  height: 340px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 250px;
+  background-color: rgb(165, 165, 165);
+  flex: 0 0 auto; /* Ensure cards don't shrink or grow */
 }
 
 
@@ -54,6 +74,8 @@
     outline: none;
     border: none;
 }
+
+
 
 .tools{
 

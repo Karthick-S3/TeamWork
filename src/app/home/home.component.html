@@ -6,28 +6,12 @@
     <button class="text-center text-white getstr-btn px-3 py-3  rounded-pill">GET STARTED</button>
 </div>
 
-<section style="padding: 60px 0px;" class="cards row w-100 container-fluid d-flex align-items-center justify-content-between h-100 ">
-    <div class=" card"   >
-
+<section style="padding: 60px 0px;margin: auto;" class="cards row w-100 container-fluid d-flex align-items-center justify-content-between h-100">
+    <div class="cards-wrapper" [ngStyle]="{'width': cards.length * 270 + 'px'}">
+        <div *ngFor="let card of cards" class="col-md-6 card"></div>
     </div>
-    <div
-     class=" card" >
-
-    </div>
-    <div class=" card "  >
-
-    </div>
-    <div class=" card " >
-
-    </div>
-    
-    <div class=" card " >
-
-    </div>
-    
-    
-    
 </section>
+
 
 <section style="padding: 60px 0px;"  class="workus container h-100 d-flex align-items-center justify-content-around flex-column rounded-4">
     <div class="heads mb-5">
@@ -89,12 +73,12 @@
 
 <section style="padding: 60px 0px;" class="Projects container d-flex align-items-center justify-content-center flex-column h-100 ">
     <h5 class="fs-2 fw-bold text-center">Our Projects</h5>
-    <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus<br> beatae quibusdam quasi itaque voluptatum! Sequi!</p>
+    <p class="text-center mb-5 fs-6 fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus<br> beatae quibusdam quasi itaque voluptatum! Sequi!</p>
     <div class="project-card container d-flex align-items-center justify-content-between rounded-4">
         <div class="cont w-50 d-flex align-items-start justify-content-around flex-column p-5" data-aos="fade-up" data-aos-duration="1500"  data-aos-once = "false">
             <h3  class="text-white mb-3">Property Management <br> WebApp</h3>
             
-            <p style="font-size: 15px" class=" text-white  fw-lighter mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quaerat eligendi dignissimos perferendis, sint quo exercitationem numquam deserunt. Necessitatibus quibusdam quis voluptatem facere recusandae aut asperiores maxime, rem quidem tenetur?</p>
+            <p style="font-size: 15px" class=" text-white  fs-6 fw-light mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quaerat eligendi dignissimos perferendis, sint quo exercitationem numquam deserunt. Necessitatibus quibusdam quis voluptatem facere recusandae aut asperiores maxime, rem quidem tenetur?</p>
 
             <button class="text-center text-dark getstr-btn px-3 py-2  rounded-pill">READ MORE</button>
         </div>
@@ -103,6 +87,8 @@
         </div>
     </div>
 </section>
+
+
 
 </div>
 
@@ -132,7 +118,7 @@
     <section style="padding: 60px 20px;" class="toolcard container  d-flex align-items-center justify-content-between w-100 h-100 rounded-4">
         <div class="w-50 order-lg-1 order-2 ">
             <h1 class=" p-0" style="font-size: 60px;">Techs And Tools We Are Using For Building Our Projects</h1>
-            <p class=" fw-light fs-6">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae necessitatibus illo dicta dolorum, labore voluptatibus est earum, neque modi rerum et, inventore alias qui perferendis?</p>
+            <p class=" fw-normal fs-6">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae necessitatibus illo dicta dolorum, labore voluptatibus est earum, neque modi rerum et, inventore alias qui perferendis?</p>
     
         </div>
         <div class=" order-lg-2 order-1 w-50 d-flex align-items-center justify-content-center">
@@ -212,7 +198,7 @@
     
 
         <div>
-            <img  data-aos="fade-left" data-aos-duration="800"  style="position: absolute;right: 200px; bottom: 0%;" width="400px" src="../assets/cta.png" alt="">
+            <img  data-aos="fade-right" data-aos-duration="800"  style="position: absolute;right: 200px; bottom: 0%;" width="400px" src="../assets/cta.png" alt="">
         </div>
 
         <div  class="d-flex container align-items-start justify-content-around flex-column">
