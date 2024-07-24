@@ -238,3 +238,13 @@ textarea.form-control {
         transform: rotate(360deg);
     }
 }
+
+
+@media only screen and (max-width: 800px) {
+    .sub-btn{
+        justify-content: center !important;
+    }
+    h2{
+        font-size: 35px !important;
+    }
+}
