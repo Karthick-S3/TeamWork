@@ -1,6 +1,5 @@
 .touchBtn button {
     background: white;
-    /* color: rgb(0, 0, 0); */
     outline: none;
     border: none;
     font-weight: 600;
@@ -47,8 +46,12 @@
   }
 
   @media only screen and (max-width: 800px) {
-    .menus a{
-        display: none;
+    .menus{
+      display: none !important;
     }
+    .touchBtn{
+      display: none !important;
+    }
+    
    
   }

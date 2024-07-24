@@ -135,7 +135,11 @@
 
 .project-card{
 
-    height: 500px;
+    /* height: 500px;
+     */
+     padding:5%;
+     height: 100%;
+    
     background-color: black;
 }
 
@@ -316,14 +320,102 @@
 
 
 @media only screen and (max-width: 800px) {
-  /* .toolcard{
-    padding: 0%;
-    flex-direction: column;
-    
-  }
-  .toolcard h1{
-    width: 100%;
-  } */
+ h1{
+  font-size: 35px !important;
+ }
+ p{
+  font-size: 15px !important;
+ }
+ .whowe{
+  flex-direction: column !important;
+  width: 100% !important;
+ }
+ .whowe .left{
+  align-items: center !important;
+  text-align: center !important;
+ }
+ .whowe .center{
+  display: none !important;
+ }
+ .whowe div{
+  width: 100% !important;
+  padding: 5px !important;
+ }
+ .whowe .right .top .why{
+    width: 170px !important;
+    height: 150px !important;
+ }
+ .services h5{
+  margin: 0% !important;
+ }
+
+ .services .row div{
+  margin: 0px !important;
+ }
+ .Projects{
+  padding: 0% auto !important;
+  /* padding: 10px 0px !important; */
+  width: 100% !important;
+ }
+
+ .Projects .cont{
+  width: 100% !important;
+  margin: 0% !important;
+  padding: 0% !important;
+  align-items: center !important;
+  text-align: center !important;
+ }
+
+
+
+ .Projects .project-card{
+  width: 100% !important;
+  flex-direction:  column !important;
+ }
+ .Projects .project-card div{
+  margin:50px !important ;
+  width: 100% !important;
+ }
+
+ .toolcard{
+  align-items: center !important;
+  text-align: center !important;
+  padding: 0% !important;
+  margin: 0% !important;
+  width: 100% !important;
+  flex-direction: column;
+ }
+ .toolcard div{
+  padding: 10px !important;
+  margin: 0% !important;
+  width: 100% !important;
+ }
+ .toolcard h1{
+  font-size: 25px !important;
+ }
+
+ .reviews{
+  flex-direction: column !important;
+  padding: 30px !important
+ }
+ .reviews .review-card{
+  width: 350px !important;
+  height: 250px !important;
+  margin-bottom: 30px !important;
+ }
+
+ .contact .container{
+  align-items: center !important;
+  text-align: center !important;
+ }
+ .contact p{
+  width: 80% !important;
+ }
+
+ .contact img{
+  display: none !important;
+ }
+
  
 }
 

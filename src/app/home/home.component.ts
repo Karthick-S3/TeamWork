@@ -14,10 +14,10 @@ export class HomeComponent implements OnInit  {
   cards = [1, 2, 3, 4, 5, 6,7,8,9,10]; 
 
   ngOnInit(): void {
-  //  this.ngxService.start();
-  //  setTimeout(() => {
-  //   this.ngxService.stop();
-  //  }, 1000);
+   this.ngxService.start();
+   setTimeout(() => {
+    this.ngxService.stop();
+   }, 1000);
   }
 
 }
