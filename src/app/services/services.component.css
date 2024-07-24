@@ -117,6 +117,7 @@ h1{
     background-position: center;
     background-size: cover;
     height: max-content;
+    position: relative;
 }
  
 .service-cards .serviceBox:hover{
@@ -150,6 +151,7 @@ h1{
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     position: relative;
     z-index: 1;
+    min-width: 150px !important;
 }
 .serviceBox:after{
     content: "";
@@ -236,7 +238,7 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 425px;
+    min-height: 445px !important;
 }
 .cloud-service{
     background: linear-gradient(45deg, #ffffff 0%,#e2cdff 100%);
