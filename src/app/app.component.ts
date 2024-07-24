@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
   }
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 100;
+    this.isScrolled = window.scrollY > 50;
   }
   
 }

@@ -1,8 +1,8 @@
-<nav class="navbar navbar-light fixed-top" [ngClass]="{'scrolled': isScrolled}">
+<nav class="navbar  fixed-top" [ngClass]="{'scrolled': isScrolled}">
   <div class="container-fluid d-flex align-items-center justify-content-between">
     
     <div class="d-flex align-items-center justify-content-center">
-      <a class="navbar-brand fw-bold">Logo.</a>
+      <a class="navbar-brand fw-bold" [ngClass]="{'logoscrolled': isScrolled}">Logo.</a>
       <div class="menus  d-flex align-items-center justify-content-between ms-4" style="width: 500px;">
         <a routerLink="Home">Home</a>
         <a routerLink="Services">Services</a>
@@ -11,9 +11,10 @@
         <a routerLink="Contacts">Contacts</a>
       </div>
     </div>
-    <div class="touchBtn">
-      <button class="px-3 py-2  rounded-pill">GET IN TOUCH</button>
-      
+    <div class="touchBtn d-flex align-items-center justify-content-center">
+      <button class="px-3 py-2  rounded-pill touch" [ngClass]="{'scrolled': isScrolled}" >GET IN TOUCH</button>
+      <button class="px-2 py-1  text-dark open" [ngClass]="{'openscrolled': isScrolled}" ><i class="fa-solid fa-equals"></i></button>
+      <button class="px-2 py-1  text-dark close" [ngClass]="{'scrolled': isScrolled}" ><i class="fa-solid fa-xmark"></i></button>
     </div>
     
    

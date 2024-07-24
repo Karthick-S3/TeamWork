@@ -1,54 +1,109 @@
-.touchBtn button {
-    background: white;
-    outline: none;
-    border: none;
-    font-weight: 600;
-    box-shadow: rgba(0, 0, 0, 0.151) 0px 1px 3px 0px, rgba(27, 31, 35, 0.295) 0px 0px 0px 1px;
-  }
-  
-  .touchBtn button:hover{
-    box-shadow: rgba(0, 0, 0, 0.151) 0px 1px 3px 0px, rgba(27, 31, 35, 0.295) 0px 0px 0px 1px;
-  }
-  
-  .menus a {
-    text-decoration: none;
-    color: rgb(75, 75, 75);
-    /* transition: 0.5s ease; */
-    font-weight: 400;
-    font-size: 15px;
-  }
-  .menus a:hover{
-    /* text-decoration: underline; */
-    /* transform: scale(1.1); */
-    font-weight: 500;
-  }
-  
-  .navbar-brand {
-    color: black;
-  }
-  
+.touchBtn .touch {
+  background: white;
+  /* color: rgb(0, 0, 0); */
+  outline: none;
+  border: none;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.151) 0px 1px 3px 0px, rgba(27, 31, 35, 0.295) 0px 0px 0px 1px;
+}
+
+.touchBtn .touch:hover{
+  box-shadow: rgba(0, 0, 0, 0.151) 0px 1px 3px 0px, rgba(27, 31, 35, 0.295) 0px 0px 0px 1px;
+}
+
+.menus a {
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+  /* transition: 0.5s ease; */
+  font-weight: 400;
+  font-size: 15px;
+}
+.menus a:hover{
+  /* text-decoration: underline; */
+  /* transform: scale(1.1); */
+  font-weight: 500;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+
+
+.logoscrolled{
+  color: white;
+}
+
+
+
+.navscrolled{
+  color: white;
+}
+ .navbar.scrolled .menus a {
+  color: white;
+}
+
+
+.navbar.scrolled {
+  padding: 10px 10px;
+  background-color: black !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.navbar.scrolled .nav-link {
+  color: white;
+}
+body {
+  padding-top: 70px;
+}
+
+.navbar {
+  padding: 20px 10px;
+  transition: 0.5s ease;
+  z-index: 1000;
+}
+
+.content {
+  padding-top: 20px;
+}
+
+.open , .close {
  
-  .navbar.scrolled .menus a {
-    color: white;
+  display: none;
+
+}
+
+@media only screen and (max-width: 800px) {
+  .menus {
+    display: none !important;
   }
-  .navbar{
-    padding: 30px 10px;
-    transition: 0.5s ease;
-  }
-  
-  .navbar.scrolled {
-    padding: 10px 10px;
-    background-color: #7010f5 !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  .navbar-nav {
+    flex-direction: row;
   }
 
-  @media only screen and (max-width: 800px) {
-    .menus{
-      display: none !important;
-    }
-    .touchBtn{
-      display: none !important;
-    }
-    
-   
+  .content {
+    padding-top: 0;
   }
+
+ .touch {
+  
+  display: none;
+}
+
+.open{
+  font-size: 20px;
+  display: block;
+  border: none ;
+  outline: none;
+  background-color: transparent;
+}
+
+.openscrolled{
+  color: white !important;
+}
+
+
+
+}
+
+
+

@@ -1,10 +1,10 @@
 <svg width="1440" height="400" viewBox="0 0 1440 400" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <path d="M0 0H1440V400H0V0Z" fill="white"/>
-<path d="M131 144C369.5 115.5 121 305.5 364.5 286" stroke="#A0A0A0" stroke-width="3" stroke-dasharray="10 10"/>
-<path d="M600 143.913C362.011 115.477 609.979 305.052 367 285.595" stroke="#A0A0A0" stroke-width="3" stroke-dasharray="10 10"/>
-<path d="M1071 143.913C833.011 115.477 1080.98 305.052 838 285.595" stroke="#A0A0A0" stroke-width="3" stroke-dasharray="10 10"/>
-<path d="M604 143.92C842.5 115.42 594 305.42 837.5 285.92" stroke="#A0A0A0" stroke-width="3" stroke-dasharray="10 10"/>
-<path d="M1077 143.92C1315.5 115.42 1067 305.42 1310.5 285.92" stroke="#A0A0A0" stroke-width="3" stroke-dasharray="10 10"/>
+<path d="M131 144C369.5 115.5 121 305.5 364.5 286" stroke="#A0A0A0" stroke-width="5" stroke-dasharray="10 10"/>
+<path d="M600 143.913C362.011 115.477 609.979 305.052 367 285.595" stroke="#A0A0A0" stroke-width="5" stroke-dasharray="10 10"/>
+<path d="M1071 143.913C833.011 115.477 1080.98 305.052 838 285.595" stroke="#A0A0A0" stroke-width="5" stroke-dasharray="10 10"/>
+<path d="M604 143.92C842.5 115.42 594 305.42 837.5 285.92" stroke="#A0A0A0" stroke-width="5" stroke-dasharray="10 10"/>
+<path d="M1077 143.92C1315.5 115.42 1067 305.42 1310.5 285.92" stroke="#A0A0A0" stroke-width="5" stroke-dasharray="10 10"/>
 <g filter="url(#filter0_d_19_155)">
 <rect x="33" y="87" width="193" height="132" rx="10" fill="#BEEFFF"/>
 </g>
