@@ -406,3 +406,25 @@
   font-size: 16px;
   line-height: 1.5;
   }
+
+  @media only screen and (max-width: 800px) {
+    .title{
+      font-size: 45px !important;
+    }
+    .All3Content{
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-direction: column !important;
+    }
+    .mission{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .mission-in{
+      display: none;
+    }
+  }
