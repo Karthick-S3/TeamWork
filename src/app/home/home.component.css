@@ -21,14 +21,35 @@
     background:#465368;
 }
 
-.card{
-    margin: 0px 10px;
-    height: 340px;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 250px;
-    background-color: black;
+.cards {
+  overflow: hidden;
+  position: relative;
 }
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.cards-wrapper {
+  display: flex;
+  animation: slide 30s linear infinite;
+}
+
+.card {
+  margin: 0px 30px;
+  height: 340px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 250px;
+  background-color: black;
+  flex: 0 0 auto; /* Ensure cards don't shrink or grow */
+}
+
 
 .card:nth-child(1){
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/1.jpg');
@@ -146,9 +167,9 @@
 
 
   
-  .reviews{
+  /* .reviews{
     margin-top: 20px;
-  }
+  } */
 
   .reviews .review-card{
     margin: auto 20px;
@@ -352,7 +373,7 @@
   flex-direction:  column !important;
  }
  .Projects .project-card div{
-  margin:50px !important ;
+  margin:50px auto !important ;
   width: 100% !important;
  }
 
@@ -375,7 +396,7 @@
 
  .reviews{
   flex-direction: column !important;
-  padding: 30px !important
+  /* padding: 30px !important */
  }
  .reviews .review-card{
   width: 350px !important;

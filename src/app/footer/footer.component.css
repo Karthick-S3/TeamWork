@@ -1,87 +1,214 @@
-.footer-map{
+/* .footer-map{
     position: absolute;
     top: 50;
     right:50;
-    width: 100%;
+    width: 900px;
     height: 300px;
     opacity: 0.3;
     z-index: 1;
   }
-    
-  
+   
+ 
     .footer-div{
-      height: 320px;
-      
+     
+      background-color: black;
       position: relative;
     }
-    .footer-div .home{
+    /* .footer-div .home{
       height: 320px;
      
-    }
+    } */
     .home{
-        height: 100%;
+      height: 100%;
+  }
+  .home h1{
+     
+      padding: 50px 0px 10px 0px;
+      font-size:90px;
+      font-weight:800 ;
+     
+  }
+
+  .social a{
+      font-size: 35px;
+      margin-right: 15px;
+      color: white;
+     
+ 
     }
-    .home h1{
-       
-        padding: 50px 0px 10px 0px;
-        font-size:90px;
-        font-weight:800 ;
-        
+    .social a:nth-child(1):hover {
+      color: #1775f1;
+    }
+    .social a:nth-child(2):hover {
+      color: rgb(210, 119, 233);
+    }
+    .social a:nth-child(3):hover {
+      color:  #1873b9;
+    }
+    .social a:nth-child(4 ):hover {
+      color: #E70820;
+      border-radius: 50%;
+    }
+    .social a:nth-child(5) {
+      color: white;
+    }
+    .social a i{
+      transition: 0.5s;
+    }
+    .social a i:hover{
+      transform: rotate(360deg);
     }
 
-    .social a{
-        font-size: 35px;
-        margin-right: 15px;
-        color: white;
-        
-    
-      }
-      .social a:nth-child(1):hover {
-        color: #1775f1;
-      }
-      .social a:nth-child(2):hover {
-        color: rgb(210, 119, 233);
-      }
-      .social a:nth-child(3):hover {
-        color:  #1873b9;
-      }
-      .social a:nth-child(4 ):hover {
-        color: #E70820;
-        border-radius: 50%;
-      }
-      .social a:nth-child(5) {
-        color: white;
-      }
-      .social a i{
-        transition: 0.5s;
-      }
-      .social a i:hover{
-        transform: rotate(360deg);
-      }
+    .service-list a {
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 300;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.589);
+    }
+ 
+    .service-list a:hover{
+      color: white;
+      text-shadow: 2px 2px 4px #ffffff;
+    }
+    .copyright{
+      height: 40px;
+    }
+    .copyright a{
+      font-size: 13px;
+      margin-left: 20px;
+      color: white;
+    }
+   
+    .copyright a:hover{
+      color: #1775f1;
+    }
+     */
+     .footer-map {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      width: 900px;
+      height: 300px;
+      opacity: 0.3;
+      z-index: 1;
+  }
+ 
+  .footer-div {
+      height: 320px;
+      position: relative;
+      padding: 20px 0;
+      background-image: url(../../assets/map.png)  opacity 0.3;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+   
+  }
+ 
+  /* .footer-div .home {
+      height: 320px;
+      width: 100%;
+  } */
+ 
+  .home h1 {
+      padding: 50px 0px 10px 0px;
+      font-size: 90px;
+      font-weight: 800;
+  }
 
-      .service-list a {
-        font-size: 14px;
-        text-decoration: none;
-        font-weight: 300;
-        margin-bottom: 10px;
-        color: rgba(255, 255, 255, 0.589);
+  .social{
+    width: -webkit-fill-available;
+  }
+  .social a {
+      font-size: 35px;
+      margin-right: 15px;
+      color: white;
+  }
+ 
+  .social a:nth-child(1):hover {
+      color: #1775f1;
+  }
+ 
+  .social a:nth-child(2):hover {
+      color: rgb(210, 119, 233);
+  }
+ 
+  .social a:nth-child(3):hover {
+      color: #1873b9;
+  }
+ 
+  .social a:nth-child(4):hover {
+      color: #E70820;
+      border-radius: 50%;
+  }
+ 
+  .social a:nth-child(5) {
+      color: white;
+  }
+ 
+  .social a i {
+      transition: 0.5s;
+  }
+ 
+  .social a i:hover {
+      transform: rotate(360deg);
+  }
+ 
+  .text-light{
+    padding-top: 20px;
+  }
+  .service-list a {
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 300;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.589);
+  }
+ 
+  .service-list a:hover {
+      color: white;
+      text-shadow: 2px 2px 4px #ffffff;
+  }
+ 
+  .copyright {
+      height: 40px;
+      margin-top: 20px;
+      padding: 10px 0;
+  }
+ 
+  .copyright p {
+      margin: 0;
+  }
+ 
+  .copyright a {
+      font-size: 13px;
+      margin-left: 20px;
+      color: white;
+  }
+ 
+  .copyright a:hover {
+      color: #1775f1;
+  }
+ 
+  @media (max-width: 767.98px) {
+      .footer-div .home .col-12 {
+          text-align: center;
       }
-    
-      .service-list a:hover{
-        color: white;
-        text-shadow: 2px 2px 4px #ffffff;
+ 
+      .footer-div .home .service-list {
+          align-items: center;
       }
-      .copyright{
-        /* max-width: 1320px; */
-        height: 40px;
+ 
+      .footer-map {
+          width: 100%;
+          height: auto;
+          position: relative;
+          top: 0;
+          right: 0;
       }
-      .copyright a{
-        font-size: 13px;
-        margin-left: 20px;
-        color: white;
-      }
-      
-      .copyright a:hover{
-        color: #1775f1;
-      }
-      
+  }
+  @media (max-width: 767.98px) {
+    .col-12.col-md-4 p {
+        width: 100%;
+    }
+}
