@@ -3,11 +3,9 @@
     z-index: 1;
     background-color: #ffffff;
     background: linear-gradient(45deg, #e2cdff 0%,#ffffff 100%);
-    /* background:#f5f7f2; */
     border-bottom: 1px solid #fafafa;
     padding-top: 90px;
     padding-bottom: 30px;
-    margin-top: 100px;
 }
  
 .container{
@@ -31,12 +29,11 @@ h1{
 .header-btn{
     border: none;
     background-color: black;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     color: white;
     text-align: center;
     padding: 12px 25px;
     border-radius: 5px;
-    
+    transition: .5s;
     img{
         margin-right: 10px;
     }
@@ -44,12 +41,12 @@ h1{
  
  
 .header-btn:hover{
-    background:#465368;
-
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 255, 0.63);
 }
  
 .title{
-    color: #7010f5;;
+    color: #9c71d8;;
     font-weight: 700;
     font-size: 15px;
     text-align: center;
@@ -115,7 +112,7 @@ h1{
 }
  
 .service-cards{
-    /* background: linear-gradient(45deg, #ffffff 0%,#e2cdff 100%); */
+    background: linear-gradient(45deg, #ffffff 0%,#e2cdff 100%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -124,8 +121,7 @@ h1{
  
 .service-cards .serviceBox:hover{
     cursor: pointer;
-    border:1px solid #9c71d8;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border:1px solid #9c71d8;;
 }
  
 .rocket{
@@ -198,10 +194,10 @@ h1{
     text-align: center;
     margin: 0;
 }
-.serviceBox.pink{ --main-color: #6101d3; }
-.serviceBox.blue{ --main-color: #ca2c5b; }
-.serviceBox.green{ --main-color: #0000ff; }
-.serviceBox.lightgreen{ --main-color: #9acd32; }
+.serviceBox.pink{ --main-color: #FA68A0; }
+.serviceBox.blue{ --main-color: #01748E; }
+.serviceBox.green{ --main-color: #06BD7F; }
+.serviceBox.lightgreen{ --main-color: #A0C438; }
 @media only screen and (max-width: 1199px){
     .serviceBox{ margin: 0 0 40px; }
 }
@@ -236,16 +232,14 @@ h1{
     max-width: 700px;
 }
 .next-service{
-    /* background: linear-gradient(45deg, #ffffff 0%,#e2cdff 100%); */
+    background: linear-gradient(45deg, #ffffff 0%,#e2cdff 100%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 425px;
 }
 .cloud-service{
-    /* background: linear-gradient(45deg, #ffffff 0%,#e2cdff 100%);
-     */
-     background: #f5f7f2;
+    background: linear-gradient(45deg, #ffffff 0%,#e2cdff 100%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -300,10 +294,9 @@ h1{
 }
 .service-list li:hover{
     cursor: pointer;
-    /* box-shadow: #9c71d8 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: #9c71d8 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     i{
-        background-color: #7010f5;
+        background-color: #9c71d8;
         color: white;
     }
 }

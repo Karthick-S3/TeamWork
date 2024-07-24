@@ -1,5 +1,6 @@
-import { Component, HostListener,OnInit } from '@angular/core';
-
+import { Component, HostListener, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import * as AOS from 'aos';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
@@ -8,25 +9,29 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  constructor(private ngxService : NgxUiLoaderService ) {}
-  ngOnInit(): void {
-    this.ngxService.start();
-    setTimeout(() => {
-    this.ngxService.stop();
-    }, 1000);
-  }
+
 
   
 
   title = 'Teamwork-appz';
   isScrolled: boolean = false;
-Scrolledlogo: boolean = false;
 
+  constructor(private router: Router, private ngxService : NgxUiLoaderService ) {}
+
+  ngOnInit() {
+    // Initialize AOS
+    AOS.init();
+
+    // Refresh AOS on every route change
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        AOS.refresh();
+      }
+    });
+  }
   @HostListener('window:scroll', [])
-
-
   onWindowScroll() {
     this.isScrolled = window.scrollY > 100;
-    this.Scrolledlogo = window.scrollY > 100;
   }
+  
 }

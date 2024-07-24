@@ -169,7 +169,7 @@ img {
     font-size: 16.5px;
 }
 .default-btn:hover{
-    background:#465368;
+    background-color: #221638;
 }
  
 .contact-form {
@@ -216,13 +216,19 @@ textarea.form-control {
     margin-top: 5px;
 }
 .default-btn {
-    background:#0d0c22;
-    color: white;
-    outline: none;
     border: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-    
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    color: #fff;
+    background-color:#7010f5;
+    transition: .5s;
+    border-radius: 5px;
+    padding: 12px 25px 12px 50px;
+    font-weight: 700;
+    font-size: 16px;
 }
 @keyframes rotateme {
     from {

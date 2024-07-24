@@ -31,9 +31,9 @@ export class AboutComponent implements OnInit, AfterViewInit {
   ];
 
   activeSlide = 'slide1';
-
+ 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
-
+ 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       this.incrementClientsCounter();

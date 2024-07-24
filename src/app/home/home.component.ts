@@ -4,9 +4,7 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
- 
-
+  styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit  {
   constructor(private ngxService : NgxUiLoaderService){}
