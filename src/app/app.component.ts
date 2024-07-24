@@ -8,10 +8,12 @@ import * as AOS from 'aos';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+  
+
   title = 'Teamwork-appz';
   isScrolled: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private ngxService : NgxUiLoaderService ) {}
 
   ngOnInit() {
     // Initialize AOS
