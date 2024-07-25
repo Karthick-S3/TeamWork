@@ -10,6 +10,7 @@ export class ContactComponent {
   constructor(private ngxService:NgxUiLoaderService){}
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.ngxService.start();
  
     this.ngxService.stop();

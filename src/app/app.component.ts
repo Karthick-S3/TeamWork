@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   constructor(private router: Router, private ngxService: NgxUiLoaderService) {}
 
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.ngxService.start();
     AOS.init();
 

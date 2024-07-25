@@ -36,6 +36,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
   constructor(@Inject(PLATFORM_ID) private platformId: Object,private ngxService: NgxUiLoaderService) {}
  
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.ngxService.start();
         if (isPlatformBrowser(this.platformId)) {
       this.incrementClientsCounter();

@@ -248,6 +248,7 @@
   }
   .whyus-btn:hover{
     background: #465368;
+    
   }
   
   .workus .right .why{
@@ -260,6 +261,12 @@
     border-radius: 10px;
     border: 1px solid #dadada;
     cursor: pointer;
+    transition:  0.5s ease;
+  }
+  .workus .right .why:hover{
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
   }
   .why h4{
   font-weight: 500;
