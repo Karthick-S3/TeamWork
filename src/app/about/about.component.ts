@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-about',
@@ -25,20 +26,23 @@ export class AboutComponent implements OnInit, AfterViewInit {
   ];
 
   slides = [
-    { id: 'slide1', title: 'Our Commitment', content: 'We are committed to delivering value and making a difference through our dedicated efforts and unwavering principles. Our commitments drive us to achieve excellence and build trust with our stakeholders.', number: 1, image: 'Commitment.jfif' },
+    { id: 'slide1', title: 'Our Commitment', content: 'We are committed to delivering value and making a difference through our dedicated efforts and unwavering principles. Our commitments drive us to achieve excellence and build trust with our stakeholders.', number: 1, image: 'Commitment.jpg' },
     { id: 'slide2', title: 'Our Capabilities', content: 'Our capabilities encompass a wide range of skills and expertise, allowing us to provide comprehensive solutions tailored to meet the unique needs of our clients.', number: 2, image: 'Capabilities.jpg' },
     { id: 'slide3', title: 'Our Achievements', content: 'We take pride in our accomplishments and the recognition we have received for our contributions and excellence.', number: 3, image: 'Achievements.jpg' },
   ];
 
   activeSlide = 'slide1';
  
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object,private ngxService: NgxUiLoaderService) {}
  
   ngOnInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
+    this.ngxService.start();
+        if (isPlatformBrowser(this.platformId)) {
       this.incrementClientsCounter();
       this.incrementLocationsCounter();
     }
+
+    this.ngxService.stop();
   }
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
