@@ -42,7 +42,7 @@
 
 .navbar.scrolled {
   padding: 10px 10px;
-  background-color: black !important;
+  background-color: rgb(0, 0, 0) !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .navbar.scrolled .nav-link {
@@ -147,4 +147,8 @@ body {
   line-height: 1.1428571429;
   font-weight: 600;
   letter-spacing: .007em;
+}
+
+.opened{
+  display: none;
 }

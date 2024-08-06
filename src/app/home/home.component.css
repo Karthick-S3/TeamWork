@@ -46,10 +46,12 @@
   border-radius: 10px;
   cursor: pointer;
   width: 250px;
-  background-color: black;
-  flex: 0 0 auto; /* Ensure cards don't shrink or grow */
+  background-color: rgb(109, 109, 109);
+  flex: 0 0 auto;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
-
 
 .card:nth-child(1){
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.068)), url('../../assets/Employee/1.jpg');
@@ -124,6 +126,8 @@
 
 
 
+
+
 .services h3{
     color: #7010f5;
 }
@@ -136,13 +140,11 @@
 
 .project-card{
 
-    /* height: 500px;
-     */
+    background-color: black;
      padding:5%;
      height: 100%;
-    
-    background-color: black;
 }
+
 
 .project-card button{
     background:#ffffff;
@@ -204,7 +206,7 @@
   }
 
   .anim{
-    width: 30%;
+    width: 90px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -388,6 +390,7 @@
 
 
  .Projects .project-card{
+
   width: 100% !important;
   flex-direction:  column !important;
  }
@@ -441,3 +444,9 @@ button{
   cursor: pointer;
 }
 
+
+@media only screen and (max-width: 1024px){
+  .contact img{
+    right: 1% !important;
+  }
+}

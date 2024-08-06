@@ -5,7 +5,7 @@
       <div class="menus d-flex align-items-center justify-content-between ms-4" style="width: 500px;">
         <a routerLink="Home">Home</a>
         <a routerLink="Services">Services</a>
-        <a routerLink="#">Projects</a>
+        <a routerLink="Projects">Projects</a>
         <a routerLink="About">About US</a>
         <a routerLink="Contacts">Contacts</a>
       </div>
@@ -24,20 +24,20 @@
     <div class="popmenus">
       <a routerLink="Home" (click)="Closenav()">Home</a>
         <a routerLink="Services" (click)="Closenav()">Services</a>
-        <a routerLink="#"(click)="Closenav()">Projects</a>
-        <a routerLink="Services" (click)="Closenav()">Products</a>
+        <a routerLink="Projects"(click)="Closenav()">Projects</a>
+        <a routerLink="Projects" (click)="Closenav()">Products</a>
         <a routerLink="#" (click)="Closenav()">Resources</a>
-        <a routerLink="#" (click)="Closenav()">Company</a>
+        <a routerLink="About" (click)="Closenav()">Company</a>
         <a routerLink="Contacts" (click)="Closenav()">Contacts</a>
-        <a routerLink="Contacts" (click)="Closenav()">Support</a>
-        <a routerLink="Contacts" (click)="Closenav()">Policy</a>
+        <a routerLink="Projects" (click)="Closenav()">Support</a>
+        <a routerLink="Projects" (click)="Closenav()">Policy</a>
         <a routerLink="About" (click)="Closenav()">About</a>
 
     </div>
   </div>
 </nav>
 <ngx-ui-loader fgsType="three-strings" fgsColor="#FFFFFF" pbColor="transparent"></ngx-ui-loader>
-<router-outlet></router-outlet>
+<router-outlet ></router-outlet>
 
 
 
